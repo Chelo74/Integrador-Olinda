@@ -1,0 +1,530 @@
+@font-face{
+    font-family: JosefinSans-Light;
+    src: url('./Fonts/Josefin-Sans/static/JosefinSans-Light.ttf');
+}
+
+@font-face {
+    font-family: KaushanScript-Regular;
+    src: url('./Fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JosefinSans-Light';
+    font-size: 10px;
+}
+
+/* ----------> Header <----------*/
+
+.header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.90);
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    height: 100%;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: #F7F7F2;
+    font-size: 1.6rem;
+    letter-spacing: 0.12rem;
+}
+
+.navbar i{
+    font-size: 30px;
+    color: #F7F7F2;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+.header img{
+    height: 75%; 
+}
+
+/* ----------> Hero <----------*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    background-image: url('./Images/backgroundXXL-frutasEnBowls.jpg');
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;    
+    width: 50%;
+    margin-left: 60px;
+    margin-top: 15vh;
+    color: #F7F7F2;
+    gap: 22px;
+}
+
+.slogan h1, span{
+    font-size: 8rem;
+    font-weight: 500;
+    font-family: 'KaushanScript-Regular';
+    letter-spacing: 0.7rem;
+    line-height: 1.25;
+}
+
+.slogan span{
+    font-size: 6.5rem;
+}
+
+.content p{
+    font-size: 2.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    min-width: 500px;
+    max-width: 600px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 550;
+    border-radius: 17.5px;
+    width: 222px;
+    height: 38px;
+    background-color: #F038FF;
+    color: #F7F7F2;
+    border: 1.8px solid #F7F7F2;
+}
+
+.button:hover{
+    -webkit-transform:scale(1);
+    transform:scale(1.05);
+}
+
+.content-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ----------> Categories <----------*/
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.categories h2{
+    margin-top: 25px;
+    font-size: 5rem;
+    font-weight: 550;
+}
+
+.content-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    width: 285px;
+    border-radius: 17px;
+    gap: 18px;
+    color: #121113;
+    background-color: #E4E6C3;
+    box-shadow: 0px 0px 12px 1px rgba(18, 17, 19, 1);
+}
+
+.card:hover{
+    -webkit-transform:scale(1);
+    transform:scale(1.02);
+}
+
+.card img{
+    width: 250px;
+    height: 140px;
+    border-radius: 17px;
+}
+
+.card-items h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-items a{
+    text-decoration: none;
+    color: #121113;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-items a:hover{
+    text-decoration-line: underline;
+    color: #121113;
+}
+
+.card-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ----------> Contact <----------*/
+
+.section-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 50px; */
+    height: 70vh;
+    width: 100%;
+    
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 50%;
+    height: 100%;
+    background-color: #E4E6C3; 
+}
+
+.contact-info h4{
+    font-size: 4rem;
+}
+
+.contac-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style-type: none;
+    color: #121113;
+}
+
+.contact-items-li{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 400px;
+    gap: 25px;
+}
+
+.contac-items i{
+    font-size: 3rem;
+    color: #121113;
+}
+
+.contac-items p{
+    text-decoration: none;
+    color: #121113;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 80%;
+}
+
+.contact-img{
+    width: 50%;
+    height: 100%;
+    background-image: url('./Images/ImgContact2.JPG');
+}
+
+/* ----------> Footer <----------*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #E4E6C3;
+    border-top: 2px solid #F7F7F2;
+}
+
+.footer img{
+    height: 70%;
+}
+
+/* ----------> Media Querys <----------*/
+
+@media screen and (max-width: 930px) {
+    .hero{
+        background-image: url('./Images/backgroundMedium2.JPG');
+    }
+    
+    .navbar ul{
+        gap: 30px;
+    }
+
+    .navbar-link{
+        font-size: 1.5rem;
+    }
+
+    .content{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 6.5vh 0px 0px 0px;
+        color: #F7F7F2;
+    }
+
+    .slogan h1, span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+    }
+
+    .content p{
+        font-size: 2.2rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .card{
+        height: 200px;
+        width: 245px;
+        gap: 15px;
+    }
+
+    .card img{
+        width: 200px;
+        height: 110px;
+    }
+
+    .contact-info h4{
+        font-size: 3.5rem;
+    }
+
+    .contact-items-li{
+        width: 300px;
+        gap: 20px;
+    }
+
+    .contac-items i{
+        font-size: 2.5rem;
+    }
+    
+    .contac-items p{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header img{
+        display: none;
+    }
+    
+    .header{
+        justify-content: center;
+    }
+
+    .contact-items-li{
+        width: 250px;
+        gap: 18px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    .navbar ul{
+        background-color: rgba(0, 0, 0, 0.97);
+        width: 100%;
+        height: calc(100vh - 12vh);
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.5s ease-out;
+        gap: 50px;
+        font-weight: 550;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list{
+        transform: translateX(0%);
+        transition: all 0.5s ease-in;
+    }
+
+    .header img{
+        display:initial;
+    }
+
+    .header{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .hero{
+        height: 65vh;
+        background-image: url('./Images/backgroundSmall2.jpg');
+    }
+
+    .slogan h1{
+        font-size: 40px;
+    }
+
+    .slogan span{
+        font-size: 40px;
+    }
+
+    .content{
+        gap: 12px;
+    }
+
+    .content p{
+        font-size: 1.6rem;
+        font-weight: 600;
+        min-width: 100px;
+        margin: initial;
+    }
+
+    .button{
+        font-size: 1.7rem;
+        font-weight: 400;
+        border-radius: 17.5px;
+        width: 170px;
+        height: 31px;
+    }
+
+    .card{
+        height: 170px;
+        width: 220px;
+        gap: 12px;
+    }
+
+    .card img{
+        width: 180px;
+        height: 90px;
+    }
+
+    .categories h2{
+        font-size: 4.5rem;
+    }
+
+    .contact-img{
+        display: none;
+    }
+
+    .contact-info{
+        width: 100%;
+    }
+
+    .contact-items-li p{
+        display: none;
+    }
+
+    .contact-items-li{
+        width: inherit;
+    }
+
+    .contac-items{
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    .contac-items i{
+        font-size: 3.5rem;
+    }
+
+    .section-contact{
+        height: 200px;
+    }
+
+    .footer{
+        height: 75px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .card{
+        width: 85%;
+        height: 70px;
+        flex-direction: row;
+    }
+
+    .categories h2{
+        font-size: 3rem;
+    }
+
+    .card img{
+        height: 100%;
+        border-radius: 17px 0px 0px 17px;
+    }
+
+    .card-items{
+        width: 80%;
+        min-width: 100px;
+        gap: 8px;
+    }
+
+    .card-items h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .contact-info h4{
+        font-size: 3.3rem;
+        font-weight: 500;
+    }
+
+    .contac-items i{
+        font-size: 3rem;
+    }
+
+    .footer{
+        height: 65px;
+    }
+}
